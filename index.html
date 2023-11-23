@@ -64,26 +64,54 @@
   color: #666;
 }
 
-
+    .grid-values {
+      text-align: center;
+      margin-top: 80px;
+   		margin-bottom: 10px
+      
+    
+    
+    }
 
 .grid-container {
+      padding: 60px;
+      text-align: center;
+  		margin-bottom: 60px;
 
-  flex-wrap: wrap;
-  padding: 64px;
-  text-align: center;
 }
 
-.grid-item {
-  flex: 1;
-  padding: 16px;
-  
+.grid-container2 {
+
+
+  		display: flex;
+      justify-content: space-around;
+      padding: 60px;
+      text-align: center;
+  		margin-bottom: 60px;
+
 }
+
+    .grid-item-1,
+    .grid-item-2,
+    .grid-item-3 {
+      text-align: left;
+    }
 
 .quote-container {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 100px;
+}
+    
+.quote-container h1.quote {
+  font-size: 55px;
+  margin-bottom: 10px; 
+}
+
+.quote-container p.author {
+  font-size: 18px; 
+  margin-top: 0;
 }
 
 .footer {
@@ -93,19 +121,6 @@
   padding: 64px;
 }
 
-.social-icons {
-  font-size: 2em;
-  margin-bottom: 16px;
-}
-
-.social-icons i {
-  margin: 0 8px;
-  color: white;
-}
-
-.social-icons i:hover {
-  color: #ddd;
-}
   </style>
 </head>
 <body>
@@ -123,16 +138,24 @@
 
 <!-- Header -->
 <header class="header">
-  <img src="image0.png" alt="Wesley Photo" width="500" height="333">
+  <img src="image0.png" alt="Wesley Photo" width="550" height="670">
 
-  <p class="header-subtitle">Your subtitle here</p>
+  <p class="header-subtitle">Hi, I'm Wesley. I'm a Student Studying UX/UI Design <br>
+‍at the University of Waterloo.</p>
 </header>
 
 <!-- First Grid -->
 <div class="grid-container">
   <div class="grid-item">
-    <h1>Wesley Yee is a...</h1>
-    <p>I'm passionate about creating...</p>
+    <h1>Ungraduate student at the University of Waterloo <br>
+      pursuing a Degree in Global Business and Digital Arts <br>
+      with career interests in tech, media, and games.</h1>
+    <p>Coming from Toronto, my passion lies at the intersection of media, <br>
+      tech, gaming, and design.  I've been enamored with technology<br>
+      since childhood, and now I'm channeling that passion into my <br>
+      studies. I'm all about learning, staying passionate, and <br>
+      exploring the creative frontier. Let's connect and bring <br>
+      innovation to life!</p>
   </div>
   <div class="grid-item">
     <!-- Your icon or image goes here -->
@@ -142,21 +165,57 @@
 <hr style="width:70%">
 
 <!-- Second Grid -->
-<div class="grid-container">
-  <div class="grid-item">
-    <!-- Your icon or image goes here -->
+<div class="grid-values">
+  <h1>Values</h1>
   </div>
-  <div class="grid-item">
-    <h1>Intro</h1>
-    <p>I was born, I am studying, I've always</p>
+
+
+<div class="grid-container2">
+  <div class="grid-item-1">
+    <h1>Innovation</h1>
+    <p>Innovation is at the center of my journey. <br>
+      It's what motivates me to look for original<br>
+      ideas and inventive solutions. To embrace<br>
+      innovation is to always be pushing the <br>
+      envelope, venturing into unknown territory<br>
+      , and coming up with novel solutions to <br>
+      problems. I try to apply creative thinking<br>
+      to anything I do—work, studies, and <br>
+      projects—in an effort to not just follow<br>
+      but also to create trends!</p>
+  </div>
+  <div class="grid-item-2">
+    <h1>Collaboration</h1>
+    <p>A fundamental component of my<br> 
+      philosophy is collaboration. <br>
+      I think that group intelligence<br>
+      and collaboration have great power.<br>
+      My objective is to promote a<br>
+      collaborative atmosphere that unites<br>
+      individuals with different backgrounds<br>
+      and abilities. When we work together,<br>
+      we can accomplish more, share knowledge, <br>
+      and produce something that is greater<br>
+      than the sum of our parts!</p>
+  </div>
+  <div class="grid-item-3">
+    <h1>Passion</h1>
+    <p>Passion, to me, is the driving force<br>
+      that fuels my motivation to jump out of<br>
+      bed each morning. It's not a singular<br>
+      entity but rather a source of boundless<br>
+      desire and enthusiasm. Its significance<br>
+      lies in the fact that this intense passion<br>
+      propels me to overcome challenges and go<br>
+      to great lengths in the pursuit of my goals.</p>
   </div>
 </div>
 
 <!-- Quote of the day -->
 <div class="quote-container">
-  <h1>Quote of the day: live life</h1>
+  <h1 class="quote">"Do it with passion or not at all."</h1>
+  <p class="author">- Rosa Nochette Carey</p>
 </div>
-
 
 </body>
 </html>
