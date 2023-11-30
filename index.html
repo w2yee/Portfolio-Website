@@ -65,28 +65,31 @@
     
     
     
-        /* Introduction Section */
-    #introduction {
-      position: relative;
-      padding: 200px 400px;
-      text-align: left;
-      background-color: black;
-    }
+/* Introduction Section */
+#introduction {
+  position: relative;
+  padding: 200px 400px;
+  text-align: left;
+  background-color: black;
+}
 
-    #introduction h1 {
-      
-      font-size: 7.5em;
-      color: white; /* White color for "Wesley" */
-      margin-bottom: 450px;
-      
-    }
+#introduction h1 {
+  font-size: 7.5em;
+  margin-bottom: 450px;
+  color: white; /* Set the color of the entire h1 to white */
+}
 
-    #introduction p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 0;
-      color: white;
-    }
+#introduction h1 span {
+  color: purple; /* Set the color of the span to purple */
+}
+
+#introduction p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0;
+  color: white;
+  float: right;
+}
     
     
     
@@ -319,15 +322,16 @@ hr.separator {
   
   
   
-  <div id="introduction">
-  <h1>Hi! I’m Wesley - a UX/UI Student based in Toronto, Canada</h1>
+<div id="introduction">
+  <h1>Hi! I’m <span>Wesley</span> - a UX/UI Student at the University of Waterloo</h1>
   <p>
-    Coming from Toronto, my passion lies at the intersection of media,
-    tech, gaming, and design. I've been enamored with technology
-    since childhood, and now I'm channeling that passion into my
-    studies. I'm all about learning, staying passionate, and
-    exploring the creative frontier. Let's connect and bring
-    innovation to life!
+    Whether it's brainstorming ideas 
+    or collaborating on projects, 
+    I believe in the power of teamwork 
+    to design something truly special.
+    Eager to learn and armed with a curiosity-driven mindset,
+    I'm all about pushing boundaries, solving problems,
+    and collaborating with fellow enthusiasts.
   </p>
 </div>
   
@@ -342,11 +346,8 @@ hr.separator {
 <header class="header">
   <img src="image0.png" alt="Wesley Photo" width="550" height="670">
 
-  <p class="header-subtitle">Hi, I'm Wesley. I'm a Student Studying UX/UI Design <br>
-‍at the University of Waterloo.</p>
-</header>
-
 <!-- First Grid -->
+
 <div class="grid-container">
   <div class="grid-item">
     <h1>Ungraduate student at the University of Waterloo <br>
@@ -430,7 +431,7 @@ hr.separator {
   
   <hr class="separator">
   <h1 style="text-align: center; font-size: 50">Featured Projects</h1>
-  <p style="text-align: center; font-size: 25">These are the tip of the iceberg that show my design skills on Figma
+  <p style="text-align: center; font-size: 25">These are the tip of the iceberg that show my design skills on Figma</p>
 
 
   <!-- 3x2 Grid of Website Redesign Photos -->
@@ -582,6 +583,7 @@ hr.separator {
       </ul>
     </div>
   </div>
+  
 </section>
   
   
@@ -625,20 +627,20 @@ hr.separator {
   
   
 <!-- Section: Contact -->
-<section id="contact" style="text-align: center; background-color: #f9f9f9; padding: 60px;">
+<section id="contact" style="text-align: center; background-color: black; padding: 60px;">
 
-  <h1 style="font-size: 50px; margin-bottom: 30px;">Contact Me</h1>
+  <h1 style="color: white; font-size: 50px; margin-bottom: 30px;">Contact Me</h1>
 
   <!-- Line -->
   <hr style="width: 50px; border: 2px solid #333; margin-bottom: 30px;">
 
   <!-- Contact Icons -->
-  <div class="contact-icons" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px;">
+  <div class="contact-icons" style="color: white; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px;">
 
     <!-- Email -->
     <div class="contact-icon">
       <a href="mailto:your.email@example.com" target="_blank">
-        <img src="email-icon.png" alt="Email" style="width: 60px; height: 60px;">
+        <img src="emailicon.png" alt="Email" style="width: 60px; height: 60px;">
       </a>
       <p style="margin-top: 10px;">Email</p>
     </div>
@@ -646,7 +648,7 @@ hr.separator {
     <!-- Phone Number -->
     <div class="contact-icon">
       <a href="tel:+1234567890" target="_blank">
-        <img src="phone-icon.png" alt="Phone" style="width: 60px; height: 60px;">
+        <img src="callicon.png" alt="Phone" style="width: 60px; height: 60px;">
       </a>
       <p style="margin-top: 10px;">Phone</p>
     </div>
@@ -654,7 +656,7 @@ hr.separator {
     <!-- LinkedIn -->
     <div class="contact-icon">
       <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
-        <img src="linkedin-icon.png" alt="LinkedIn" style="width: 60px; height: 60px;">
+        <img src="linkedinicon.png" alt="LinkedIn" style="width: 60px; height: 60px;">
       </a>
       <p style="margin-top: 10px;">LinkedIn</p>
     </div>
@@ -662,12 +664,11 @@ hr.separator {
   </div>
 
   <!-- Additional Text -->
-  <p style="font-size: 18px; margin-top: 30px;">Feel free to reach out via email or phone. Connect with me on LinkedIn for professional networking!</p>
-	<p style="font-size: 18px; margin-top: 30px;">wesleyyee8@gmail.com</p>
-	<p style="font-size: 18px; margin-top: 30px;">(647)703-8889</p>
+  <p style="color: white; font-size: 18px; margin-top: 30px;">Feel free to reach out via email or phone. Connect with me on LinkedIn for professional networking!</p>
+	<p style="color: white; 18px; margin-top: 30px;">wesleyyee8@gmail.com</p>
+	<p style="color: white; 18px; margin-top: 30px;">(647)703-8889</p>
 
 </section>
-  
   
   
   
