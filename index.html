@@ -67,15 +67,20 @@
 /* Introduction Section */
 #introduction {
   position: relative;
-  padding: 200px 400px;
+  padding: 200px 200px;
   text-align: left;
   background-color: black;
+  background-image: url("introimg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 
 #introduction h1 {
-  font-size: 7.5em;
+  font-size: 8.5em;
   margin-bottom: 450px;
   color: white; /* Set the color of the entire h1 to white */
+  width: 70%
 }
 
 #introduction h1 span {
@@ -85,9 +90,10 @@
 #introduction p {
   font-size: 1.2em;
   max-width: 600px;
-  margin: 0;
   color: white;
   float: right;
+  text-align: right; /* Align the text to the right */
+  margin-left: auto;
 }
     
     
@@ -163,30 +169,7 @@
 
 
 
-.proj-container {
-      padding: 60px;
-      text-align: center;
-  		margin-bottom: 60px;
 
-}
-
-.proj-container2 {
-  display: flex;
-  justify-content: space-around;
-  padding: 60px;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.proj-item-3 {
-  text-align: left; /* Align the text on the left side */
-  max-width: 700px; /* Adjust the maximum width as needed */
-  padding-right: 20px;
-}
-
-.proj-item-3 img {
-  max-width: 100%; /* Make sure the image doesn't exceed its container */
-}
 
 
 
@@ -208,16 +191,22 @@ hr.separator {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
+  
 }
 
 .photo-grid-item {
   width: 45%; /* Adjust the width as needed */
   margin-bottom: 20px;
+  
+  
+  
 }
 
 .photo-grid-item img {
   max-width: 100%;
   height: auto;
+  
+  
 }
     
 
@@ -234,35 +223,84 @@ hr.separator {
     
 
 
-    /* 3x2 Grid of Website Redesign Photos */
-    .redesign-grid-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+    /* 2x2 Grid of Website Redesign Photos */
+.redesign-grid-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
       padding: 20px;
-    }
+  
+}
 
-    .redesign-grid-item {
-      width: 45%; /* Adjust the width as needed */
-      margin-bottom: 20px;
-    }
 
-    .redesign-grid-item img {
-      max-width: 100%;
-      height: auto;
-    }
+.project-container {
+  position: relative;
+  border: 25px solid #424549; /* Grey border color */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden;
+  
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-description {
+  padding: 10px;
+  text-align: center;
+  background-color: #424549; /* Background color for the description */
+}
     
     
 
     
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+.video-grid-item {
+  width: 30%; /* Adjust the width as needed */
+  margin-bottom: 20px;
+}
+
+.video-grid-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px; /* Apply rounded corners */
+}
 
     
-#section0, #section1, #section2, #section3, #section4 {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+#section1, #section2, #section3, #section4 {
   height: 700px;  
   
-  }
-  #section0 {
-  }
+
   #section1 {
     background-color: #423711;
   }
@@ -275,7 +313,7 @@ hr.separator {
     #section4 {
     background-color: #787254;
   }
-
+    }
     
 
     
@@ -372,7 +410,7 @@ hr.separator {
   
 <!-- Header -->
 <header class="header">
-  <img src="image0.png" alt="Wesley Photo" width="550" height="670">
+  <img src="imgpose.png" alt="Wesley Photo" width="550" height="670">
 
 <!-- First Grid -->
 
@@ -460,22 +498,66 @@ hr.separator {
   <h1 style="text-align: center; font-size: 50; color: white;">Featured Projects</h1>
   <p style="text-align: center; font-size: 25; color: white;">These are the tip of the iceberg that show my design skills on Figma</p>
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
-  <!-- 3x2 Grid of Website Redesign Photos -->
-  <div class="redesign-grid-container">
-    <div class="redesign-grid-item">
-      <img src="figma_image1.JPG" alt="Redesign 1" style="width: 100%; height: auto;">
-    </div>
-    <div class="redesign-grid-item">
-      <img src="redesign1.JPG" alt="Redesign 2" style="width: 100%; height: auto;">
-    </div>
-    <div class="redesign-grid-item">
-      <img src="figma_imag3.JPG" alt="Redesign 3" style="width: 100%; height: auto;">
-    </div>
-    <div class="redesign-grid-item">
-      <img src="redesign2.JPG" alt="Redesign 4" style="width: 100%; height: auto;">
+<!-- 2x2 Grid of Featured Projects -->
+<div class="photo-grid-container">
+  <!-- Project 1 -->
+  <div class="photo-grid-item">
+    <div class="project-container">
+      <img src="figma_image1.JPG" alt="Redesign 1" class="project-image">
+      <div class="project-description">
+        <p style="font-size: 30px; color: white;">Artistry Hub: A Skillshare App Design</p>
+      </div>
     </div>
   </div>
+
+  <!-- Project 2 -->
+  <div class="photo-grid-item">
+    <div class="project-container">
+      <img src="redesign1.JPG" alt="Redesign 2" class="project-image">
+      <div class="project-description">
+        <p style="font-size: 30px; color: white;">Extreme Auto Tint: A Website Redesign</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="photo-grid-item">
+    <div class="project-container">
+      <img src="figma_image3.JPG" alt="Redesign 3" class="project-image">
+      <div class="project-description">
+        <p style="font-size: 30px; color: white;">Artistry Hub Home</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="photo-grid-item">
+    <div class="project-container">
+      <img src="redesign2.JPG" alt="Redesign 4" class="project-image">
+      <div class="project-description">
+        <p style="font-size: 30px; color: white;">Extreme Auto Tint Home</p>
+      </div>
+    </div>
+  </div>
+</div>
 
   
 
@@ -491,23 +573,27 @@ hr.separator {
 <hr class="separator">
 
 <!-- Section: Documentary and Video Essay -->
-<section id="section6" style="text-align: center; background-color: #f2f2f2; padding: 60px;">
-  <h1 style="font-size: 50px; margin-bottom: 30px;">Documentary and Video Essay</h1>
+<section id="section6" style="text-align: center; background-color: black; padding: 60px;">
+  <h1 style="font-size: 50px; margin-bottom: 30px; color: white;">Documentary and Video Essay</h1>
 
   <!-- Thumbnails and Details -->
   <div class="video-grid-container" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
     <!-- Documentary Thumbnail and Details -->
     <div class="video-grid-item" style="width: 30%; margin-bottom: 20px;">
+      <a href="https://www.youtube.com/watch?v=V737OQPWJhE&ab_channel=LancelotSupersad" target="_blank">
       <img src="Documentary.JPG" alt="Documentary Thumbnail" style="width: 100%; height: auto;">
-      <h2 style="font-size: 24px; margin: 15px 0;">Brushstrokes of Resillience</h2>
-      <p style="font-size: 18px;">A Short Documentary</p>
+      </a>
+        <h2 style="font-size: 24px; margin: 15px 0; color: white;">Brushstrokes of Resillience</h2>
+      <p style="font-size: 18px; color: white;">A Short Documentary</p>
     </div>
 
     <!-- Video Essay Thumbnail and Details -->
     <div class="video-grid-item" style="width: 30%; margin-bottom: 20px;">
+      <a href="https://vimeo.com/883890621?share=copy" target="_blank">
       <img src="Video_Essay.JPG" alt="Video Essay Thumbnail" style="width: 100%; height: auto;">
-      <h2 style="font-size: 24px; margin: 15px 0;">Data Shift</h2>
-      <p style="font-size: 18px;">A Video Essay on a Case study about Digital Culture</p>
+      </a>
+        <h2 style="font-size: 24px; margin: 15px 0; color: white;">Data Shift</h2>
+      <p style="font-size: 18px; color: white;">A Video Essay on a Case study about Digital Culture</p>
     </div>
   </div>
 </section>
@@ -595,7 +681,7 @@ hr.separator {
 
     <!-- Image -->
     <div class="why-section-image" style="flex: 1; max-width: 45%;">
-      <img src="Me-min.jpg" alt="Why Image" style="width: 60%; height: auto; border-radius: 15px;">
+      <img src="Me-min.jpg" alt="Why Image" style="width: 60%; height: auto; c;">
     </div>
 
     <!-- Text -->
