@@ -4,9 +4,11 @@
   <title>My Portfolio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+
   <style>
   body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -81,12 +83,21 @@
   font-size: 8.5em;
   margin-bottom: 450px;
   color: white; /* Set the color of the entire h1 to white */
-  width: 70%
+  width: 70%;
 }
 
 #introduction h1 span {
   color: purple; /* Set the color of the span to purple */
 }
+    
+    
+a.highlight-pink:hover, a.highlight-pink:active {background: #FF9494;}
+a.highlight-green:hover, a.highlight-green:active {background: #94FF94;}
+a.highlight-blue:hover, a.highlight-blue:active {background: #94FFF5;}
+
+
+    
+    
 
 #introduction p {
   font-size: 1.2em;
@@ -241,7 +252,7 @@ hr.separator {
 
 .project-container {
   position: relative;
-  border: 25px solid #424549; /* Grey border color */
+  border: 20px solid #424549; /* Grey border color */
   border-radius: 15px; /* Rounded corners */
   overflow: hidden;
   
@@ -291,41 +302,6 @@ hr.separator {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-#section1, #section2, #section3, #section4 {
-  height: 700px;  
-  
-
-  #section1 {
-    background-color: #423711;
-  }
-  #section2 {
-    background-color: #bbb5a7;
-  }
-    #section3 {
-    background-color: #8b2e25;
-  }
-    #section4 {
-    background-color: #787254;
-  }
-    }
-    
-
-    
 
     
     
@@ -337,12 +313,13 @@ hr.separator {
     color: white;
     text-align: center;
     padding: 100px;
-    font-family: "Montserrat", sans-serif;
+
 }
     
 .quote-container h1.quote {
   font-size: 55px;
   margin-bottom: 10px; 
+  
 }
 
 .quote-container p.author {
@@ -400,7 +377,11 @@ hr.separator {
   
   
 <div id="introduction">
-  <h1>Hi! I’m <span>Wesley</span> - a UX/UI Student at the University of Waterloo</h1>
+  <h1>Hi! I’m <span>Wesley</span> - a UX/UI Student at the 
+    <a class="highlight-pink">University</a>
+    <a class="highlight-green">Of</a>
+    <a class="highlight-blue">Waterloo</a></h1>
+  
   <p>
     Whether it's brainstorming ideas 
     or collaborating on projects, 
